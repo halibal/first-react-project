@@ -1,38 +1,145 @@
 .App {
-  text-align: center;
+	text-align: center;
+	background-color: rgb(46, 43, 43);
+	color: rgb(161, 161, 161);
+	width: 544px;
+	border-radius: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .info-section {
+	border-radius: 2rem 2rem 0 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .info-section a {
+	color: rgb(161, 161, 161);
+	margin-bottom: 10px;
+	text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App .info-section a:visited {
+	text-decoration: none;
+	color: rgb(161, 161, 161);
 }
 
-.App-link {
-  color: #61dafb;
+.App .info-section img {
+	width: 100%;
+	border-radius: 2rem 2rem 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .info-section .buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.App .info-section .buttons a {
+	width: 9rem;
+	height: 2.5rem;
+	border-radius: 0.5rem;
+	border: none;
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+.App .info-section .buttons .email {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 5px;
+}
+
+.App .info-section .buttons a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	color: rgb(46, 43, 43);
+}
+
+.App .info-section .buttons .email .envelope-icon {
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-right: 10px;
+}
+
+.App .info-section .buttons .linkedin {
+	margin: 10px 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(0, 132, 255);
+	color: white;
+}
+
+.App .info-section .buttons .linkedin a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+.App .info-section .buttons .linkedin .linkedin-icon {
+	margin-right: 10px;
+	color: white;
+	height: 1.2rem;
+	width: 1.2rem;
+}
+
+.App .info-section h1 {
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.App .info-section h2 {
+	font-size: 1rem;
+	margin-top: 0;
+}
+
+.App .about h3 {
+	margin: 10px 0;
+	color: white;
+}
+
+.App .about {
+	text-align: start;
+	margin: 2rem;
+}
+
+.App .logos {
+	background-color: rgb(24, 22, 22);
+}
+
+.App .logos * {
+	width: 48px;
+	height: 48px;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	cursor: pointer;
+}
+
+.App .logos .twitter {
+	color: rgb(161, 161, 161);
+}
+
+.App .logos .facebook {
+	color: rgb(161, 161, 161);
+}
+
+.App .logos .instagram {
+	color: rgb(161, 161, 161);
+}
+
+.App .logos .github {
+	color: rgb(161, 161, 161);
+}
+
+.App footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5rem;
+	width: 100%;
+	border-radius: 0 0 2rem 2rem;
 }
